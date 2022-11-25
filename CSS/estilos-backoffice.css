@@ -1,0 +1,18 @@
+form{
+    margin: 5px;
+}
+button{
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    border-radius: 40px;
+ 
+}
+
+body{
+    background-color: peru;
+}
+
+table{
+    border: 1;
+}
