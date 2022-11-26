@@ -2,12 +2,12 @@
 
 require '../../../conexion.php';
 
-$ci = $_POST['ci'];
+$ide = $_POST['ide'];
 
 $message = '';
   
-if (!empty($ci)) {
-  $sql = "DELETE FROM usuario WHERE ci=".$ci."";
+if (!empty($ide)) {
+  $sql = "DELETE FROM promedio WHERE ide=".$ide."";
   $stmt = $conexion->query($sql);
   header("Location: ../../backoffice.php");
 }

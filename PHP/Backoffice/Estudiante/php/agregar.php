@@ -2,13 +2,12 @@
 
 require '../../../conexion.php';
 
-$ci = $_POST['ci'];
-$nombre = $_POST['nombre'];
-$apellido = $_POST['apellido'];
-$pass = $_POST['pass'];
+$idg = $_POST['idg'];
+$idu = $_POST['idu'];
+
   $message = '';
-    if (!empty($ci) && !empty($nombre) && !empty($apellido) && !empty($pass)) {
-        $sql = "INSERT INTO usuario (ci, nombre ,apellido, pass) VALUES ('$ci', '$nombre', '$apellido', '$pass')";
+    if (!empty($idg) && !empty($idu)) {
+        $sql = "INSERT INTO promedio (idg, idu ) VALUES ('$idg', '$idu')";
         $stmt = $conexion->query($sql);
         header("Location: ../../backoffice.php");
         

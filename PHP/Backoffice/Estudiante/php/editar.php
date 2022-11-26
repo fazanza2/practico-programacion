@@ -2,12 +2,13 @@
 
 require '../../../conexion.php';
 
-$ci = $_POST['ci'];
-$nombre = $_POST['nombre'];
-$apellido = $_POST['apellido'];
-$pass = $_POST['pass'];
-  if (!empty($ci)) {
-    $sql = "UPDATE usuario SET  nombre='$nombre' ,apellido='$apellido', pass='$pass' WHERE ci='$ci'";
+$ide = $_POST['ide'];
+$idg = $_POST['idg'];
+$idu = $_POST['idu'];
+
+  if (!empty($ide)) {
+    $sql = "UPDATE promedio SET  idg='$idg' ,idu='$idu' WHERE ide='$ide'";
     $stmt = $conexion->query($sql);
     header("Location: ../../backoffice.php");   
   }
+  ?>

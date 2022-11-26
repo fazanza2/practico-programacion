@@ -1,21 +1,16 @@
 <?php
 echo "<form action='Estudiante/php/editar.php' method='post'>
-
-<label for='ci'>ci</label>
+<label for='ide'>id del estudiante</label>
 <br>
-<input type='text' name='ci' id='ci' class='input-sesion'>
+<input type='text' name='ide' id='ide' class='input-sesion'>
 <br>
-<label for='nombre'>nombre</label>
+<label for='idu'>id del usuario</label>
 <br>
-<input type='text' name='nombre' id='nombre' class='input-sesion'>
+<input type='text' name='idu' id='idu' class='input-sesion'>
 <br>
-<label for='apellido'>apellido</label>
+<label for='idg'>id del grupo</label>
 <br>
-<input type='text' name='apellido' id='' class='input-sesion'>
-<br>
-<label for='pass'>pass</label>
-<br>
-<input type='password' name='pass' id='pass' class='input-sesion'>
+<input type='text' name='idg' id='idg' class='input-sesion'>
 <br>
 <input type='submit' value='Enviar' class='a-enviar'>
 </form>";

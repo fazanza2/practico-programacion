@@ -1,6 +1,6 @@
 <?php
 include("../../conexion.php");
-$sql="SELECT * FROM usuario";
+$sql="SELECT * FROM Estudiante";
 $resultado = mysqli_query($conexion,$sql);
 
 echo "<div>
@@ -9,23 +9,18 @@ echo "<div>
         <button onclick='EEstudiante()'>Eliminar </button>
         ";
 
-echo "<table>
+echo "<table class='tabla'>
 <tr>
+<th>ide</th>
 <th>idu</th>
-<th>ci</th>
-<th>nombre</th>
-<th>apellido</th>
-<th>pass</th>
+<th>idg</th>
 
 </tr>";
 while($row = mysqli_fetch_array($resultado)) {
   echo "<tr>";
+  echo "<td>" . $row['ide'] . "</td>";
   echo "<td>" . $row['idu'] . "</td>";
-  echo "<td>" . $row['ci'] . "</td>";
-  echo "<td>" . $row['nombre'] . "</td>";
-  echo "<td>" . $row['apellido'] . "</td>";
-  echo "<td>" . $row['pass'] . "</td>";
-
+  echo "<td>" . $row['idg'] . "</td>";
   echo "</tr>";
 }
 echo "</table>";

@@ -1,14 +1,17 @@
 <?php
-echo "<form action='Grupos/php/agregar.php' method='post'>
+echo'<form action="Grupos/php/agregar.php" method="post">
+<label for="nombre">nombre</label>
+<input type="text" name="nombre" id="nombre">
+<br>
+<label for="materia">materia</label>
+<select name="materia" id="materia">
+    <option value="BD">BD</option>
+    <option value="BD2">BD2</option>
+    <option value="Prog.2">Prog.2</option>
+    <option value="P.Web">P.Web</option>
+</select>
+<br>
+<input type="submit">
+</form>';
 
-<label for='nombre'>Nombre del grupo</label>
-<br>
-<input type='text' name='nombre' id='nombre' class='input-sesion'>
-<br>
-<label for='materia'>materia</label>
-<br>
-<input type='text' name='materia' id='materia' class='input-sesion'>
-<br>
-<input type='submit' value='Enviar' class='a-enviar'>
-</form>";
 ?>

@@ -8,12 +8,14 @@
     <script src="js/funcion.js"></script>
     <title>Backoffice</title>
 </head>
-
+    <a href="../../index.html">
+      <button>Volver</button></a>
 <div class="flex">
  
    <Button onclick="Estudiante()">Estudiante</Button>
    <Button onclick="Grupos()">Grupos</Button>
    <Button onclick="Promedio()">Promedio</Button>
+   <Button onclick="Usuario() ">Usuario</Button>
    
 </div>
     <div class="flex space-between">

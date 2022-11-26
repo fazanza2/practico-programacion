@@ -1,20 +1,12 @@
 <?php
 echo "<form action='Estudiante/php/agregar.php' method='post'>
-<label for='ci'>ci</label>
+<label for='idu'>id del usuario</label>
 <br>
-<input type='text' name='ci' id='ci' class='input-sesion'>
+<input type='text' name='idu' id='idu' class='input-sesion'>
 <br>
-<label for='nombre'>nombre</label>
+<label for='idg'>id del grupo</label>
 <br>
-<input type='text' name='nombre' id='nombre' class='input-sesion'>
-<br>
-<label for='apellido'>apellido</label>
-<br>
-<input type='text' name='apellido' id='apellido' class='input-sesion'>
-<br>
-<label for='pass'>pass</label>
-<br>
-<input type='password' name='pass' id='pass' class='input-sesion'>
+<input type='text' name='idg' id='idg' class='input-sesion'>
 <br>
 <input type='submit' value='Enviar' class='a-enviar'>
 </form>";

@@ -1,17 +1,19 @@
 <?php
-echo "<form action='Grupos/php/editar.php' method='post'>
-<label for='idg'>idg a modificar</label>
+echo'<form action="Grupos/php/editar.php" method="post">
+<label for="idg">Idg</label>
+<input type="text" name="idg" id="idg">
 <br>
-<input type='text' name='idg' id='idg' class='input-sesion'>
+<label for="nombre">nombre</label>
+<input type="text" name="nombre" id="nombre">
 <br>
-<label for='grupo'>nombre</label>
+<label for="materia">materia</label>
+<select name="materia" id="materia">
+    <option value="BD">BD</option>
+    <option value="BD2">BD2</option>
+    <option value="Prog.2">Prog.2</option>
+    <option value="P.Web">P.Web</option>
+</select>
 <br>
-<input type='text' name='nombre' id='nombre' class='input-sesion'>
-<br>
-<label for='materia'>materia</label>
-<br>
-<input type='text' name='materia' id='' class='input-sesion'>
-<br>
-<input type='submit' value='Enviar' class='a-enviar'>
-</form>";
+<input type="submit">
+</form>';
 ?>

@@ -9,7 +9,7 @@ echo "<div>
         <button onclick='EPromedio()'>Eliminar </button>
         ";
 
-echo "<table>
+echo "<table >
 <tr>
 <th>ide</th>
 <th>idp</th>
